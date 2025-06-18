@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST xmlns="http://www.iab.com/VAST" version="4.0">
+  <Ad id="test-ad">
+    <InLine>
+      <AdSystem>SampleAdServer</AdSystem>
+      <AdTitle>MP4 Test Creative</AdTitle>
+      <Description>A test MP4 ad creative</Description>
+      <Impression>
+        <![CDATA[https://impbid.com/tracker?cb=${cb}&type=impression]]>
+      </Impression>
+      <Creatives>
+        <Creative id="1" sequence="1">
+          <Linear>
+            <Duration>00:00:15</Duration>
+            <TrackingEvents>
+              <Tracking event="start">
+                <![CDATA[https://impbid.com/tracker?cb=${cb}&type=start]]>
+              </Tracking>
+              <Tracking event="complete">
+                <![CDATA[https://impbid.com/tracker?cb=${cb}&type=complete]]>
+              </Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>
+                <![CDATA[https://example.com/landing-page]]>
+              </ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360" bitrate="800" scalable="true" maintainAspectRatio="true">
+                <![CDATA[https://creatives.rtbxrtb.com/bt-320-480.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
