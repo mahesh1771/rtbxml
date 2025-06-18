@@ -26,7 +26,7 @@
               </ClickThrough>
             </VideoClicks>
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="640" height="360" bitrate="800" scalable="true" maintainAspectRatio="true">
+              <MediaFile delivery="progressive" type="video/mp4" width="320" height="480" bitrate="800" scalable="true" maintainAspectRatio="true">
                 <![CDATA[https://creatives.rtbxrtb.com/bt-320-480.mp4]]>
               </MediaFile>
             </MediaFiles>
